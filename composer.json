@@ -25,22 +25,15 @@
     }
   ],
   "require": {
-    "php": "^8.0",
-    "dcodegroup/laravel-myob-oauth": "^1.0",
+    "php": "^8.0|^8.1",
+    "dcodegroup/laravel-myob-oauth": "^0.1",
     "dcodegroup/laravel-myob-employee": "^0.1",
-    "laravel/framework": "^7.0 |^8.0 | ^9.0"
-  },
-  "require-dev": {
-    "friendsofphp/php-cs-fixer": "^2.16"
+    "laravel/framework": "^7.0|^8.0|^9.0"
   },
   "autoload": {
     "psr-4": {
       "Dcodegroup\\LaravelMyobTimesheetSync\\": "src"
     }
-  },
-  "scripts": {
-    "psalm": "vendor/bin/psalm",
-    "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
   },
   "config": {
     "sort-packages": true
@@ -51,5 +44,8 @@
         "Dcodegroup\\LaravelMyobTimesheetSync\\LaravelMyobTimesheetSyncServiceProvider"
       ]
     }
+  },
+  "require-dev": {
+    "laravel/pint": "^1.2"
   }
 }
